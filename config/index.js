@@ -32,7 +32,7 @@ module.exports = {
     // Paths
     assetsRoot: path.resolve(__dirname, `../dist-${distName}`),
     assetsSubDirectory: '',
-    assetsPublicPath: '/main/',
+    assetsPublicPath: './',
     productionGzipExtensions: ['js', 'css']
   }
 }
