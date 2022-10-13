@@ -102,8 +102,7 @@ module.exports = {
       {
         test: /\.vue$/,
         loader: 'vue-loader',
-        options: vueLoaderConfig,
-        include: [resolve('src'), resolve('test')]
+        options: vueLoaderConfig
       },
 
       // 处理svg文件
@@ -120,17 +119,14 @@ module.exports = {
       {
         test: /\.(t|j)s$/,
         // loader: 'happypack/loader?id=babel',
-        use: ['babel-loader?cacheDirectory'],
-        include: [resolve('src'), resolve('test')],
-        exclude: resolve('node_modules')
+        use: ['babel-loader?cacheDirectory']
       },
 
       {
         test: /\.tsx?$/,
         // loader: 'happypack/loader?id=babel',
-        use: ['babel-loader?cacheDirectory'],
-        include: [resolve('src'), resolve('test')],
-        exclude: resolve('node_modules')
+        use: ['babel-loader?cacheDirectory']
+     
       },
 
       // 对图片资源文件进行处理，webpack5已经废弃了url-loader，改为type

@@ -10,8 +10,8 @@ import {
   Ellipsis,
   Marquee,
   Preview,
-  ElMessage,
-  showMore
+  ElMessage
+  // showMore
 } from 'base-admin'
 
 // register globally
@@ -24,4 +24,4 @@ Vue.component('ComForm', ComForm)
 
 import '@/assets/icons' // icon
 
-export { Echart, SvgIcon, Ellipsis, Marquee, Preview, ElMessage, showMore }
+export { Echart, SvgIcon, Ellipsis, Marquee, Preview, ElMessage }

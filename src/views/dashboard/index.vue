@@ -16,7 +16,7 @@ export default {
 </script>
 <script setup lang="ts">
 function openDocswweb() {
-  window.open('https://guoxlcraft.github.io/microapp-cli-doc/')
+  window.open('https://guoxlcraft.github.io/base-admin-package-docs/')
 }
 </script>
 
@@ -61,6 +61,5 @@ function openDocswweb() {
       }
     }
   }
-
 }
 </style>

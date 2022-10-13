@@ -11,7 +11,7 @@
     "lint": "eslint --fix --ext .js,.ts,.vue ./src",
     "format": "prettier --write --loglevel warn \"src/**/*.{js,ts,json,tsx,css,less,vue,html,md}\"",
     "build:dev": "npm run ts:check && node build/build.js dev",
-    "build:pro": "npm run ts:check && node build/build.js pro",
+    "build:pro": "node build/build.js pro",
     "build:test": "npm run ts:check && node build/build.js test",
     "build:report": "npm run ts:check && node build/build.js pro report",
     "clean": "npx rimraf node_modules",

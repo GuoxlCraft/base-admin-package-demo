@@ -8,9 +8,6 @@ import Vue from 'vue'
 
 import '@/plugins/element-ui' // 按需引入element
 
-import installBase from '@/installBase' // 加载公共依赖包
-installBase(Vue)
-
 import App from './App.vue'
 
 import '@/components' // 引入全局组件
@@ -38,6 +35,7 @@ Vue.config.productionTip = false
 
 import { importDirective, $utils } from 'base-admin' // 引入全局指令
 importDirective(Vue)
+
 Vue.mixin({
   methods: {
     $splitNum: $utils.splitNum
